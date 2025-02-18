@@ -9,30 +9,30 @@ let songs = [
     {
         title: "Save your tears",
         artist: "The Weekend",
-        album: "The Highlights"
+        genero: "The Highlights"
     },
     {
         title: "Love me",
         artist: "RealestK",
-        album: "Dreams 2 Reality"
+        genero: "Dreams 2 Reality"
     },
     {
         title: "ALOH ALOH",
         artist: "Kapo",
-        album: "Tu OG Favorito"
+        genero: "Tu OG Favorito"
     },
 ]
 
 app.post("/songs", (req, res) => {
-    const {title, artist, album} = req.body;
-    if(!title || !artist || !album) {
+    const {title, artist, genero} = req.body;
+    if(!title || !artist || !genero) {
         return res.status(400).json({ error: "El título y el artista son obligatorios." }); // Mensaje de error 400 (Bad Request)
     }
 
     const newSong = {
         title,
         artist,
-        album,
+        genero,
     };
 
     songs.push(newSong);
