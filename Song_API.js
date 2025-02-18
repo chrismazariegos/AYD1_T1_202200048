@@ -24,7 +24,7 @@ let songs = [
 ]
 
 app.post("/songs", (req, res) => {
-    const {title, artist} = req.body;
+    const {title, artist, album} = req.body;
     if(!title || !artist || !album) {
         return res.status(400).json({ error: "El título y el artista son obligatorios." }); // Mensaje de error 400 (Bad Request)
     }
