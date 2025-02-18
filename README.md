@@ -13,6 +13,12 @@ npm install express
 ![Prueba del metodo post](/src/image2.png)
 
 ## v1.0.0 de la API de canciones
+
 ### Comparacion entre versiones
 ![Comparacion entre versiones](/src/image3.png)
+
+### Gitflow en GitKraken
+
+![Comparacion entre versiones](/src/image4.png)
+
 
