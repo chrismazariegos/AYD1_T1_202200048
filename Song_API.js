@@ -38,3 +38,19 @@ app.post("/songs", (req, res) => {
     songs.push(newSong);
     res.status(201).json(newSong); // Cancion creada con estado 201 (creado)
 });
+let info =
+    {
+        Carnet: "202200048",
+        artist: "Christian Samuel Brán Mazariegos",
+    }
+
+
+// Endpoint para metodo get
+app.get("/songs", (req, res) => {
+    res.json(info);
+});
+// Iniciar server
+app.listen(PORT, () => {
+
+    console.log(`Server is running on port ${PORT}`);
+});
